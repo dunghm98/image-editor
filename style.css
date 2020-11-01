@@ -1,0 +1,15 @@
+@font-face { font-family: Auther; src: url('font/Auther.otf'); } 
+@font-face { font-family: Cucho; font-weight: bold; src: url('font/Cucho.otf');}
+@font-face { font-family: LesFruits; src: url('font/LesFruits.ttf'); } 
+
+.canvas-container {
+    background: #777;
+    margin: auto;
+}
+.sidebar {
+    background-color: beige;
+}
+.container {
+    display: flex;
+    margin-top: 50px;
+}
