@@ -2,7 +2,7 @@
 @font-face { font-family: Cucho; font-weight: bold; src: url('font/Cucho.otf');}
 @font-face { font-family: LesFruits; src: url('font/LesFruits.ttf'); } 
 
-.canvas-container {
+/* .canvas-container {
     background: #777;
     margin: auto;
 }
@@ -12,4 +12,61 @@
 .container {
     display: flex;
     margin-top: 50px;
+} */
+
+ul , li {
+    list-style: none;
+}
+.container {
+    background-color: #1E1E1E;
+    width: 1000px;
+    /* height: 700px; */
+    margin: auto;
+}
+
+.bss-mage-editor-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    background-color: #151515;
+}
+
+.bss-mage-editor-header h1 {
+    color: #FBB83A;
+}
+
+.button-area {
+    vertical-align: middle;
+    line-height: 70px;
+}
+
+.button-area button {
+    padding: 10px 25px;
+    border-radius: 5px;
+}
+
+.main {
+    background-color: cadetblue;
+}
+
+.bss-image-editor-controls {
+    margin-top: 150px;
+    background-color: #151515;
+    height: 50px;
+}
+
+.bss-image-editor-controls .bss-image-editor-item {
+    vertical-align: middle;
+    line-height: 50px;
+    color: #fff;
+    cursor: pointer;
+    padding: 0 20px;
+}
+.bss-image-editor-item:hover {
+    background-color: #555;
+}
+
+.bss-image-editor-menu {
+    display: flex;
+    justify-content: space-evenly;
 }

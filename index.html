@@ -4,11 +4,66 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Document</title>
     </head>
     <body>
         <div class="container">
-            <div class="sidebar">
+            <div class="bss-mage-editor-header">
+                <h1>Create your own label</h1>
+                <div class="button-area">
+                    <button class="load">Load</button>
+                    <button class="save">Save</button>
+                </div>
+            </div>
+            <div class="main">
+                <canvas id="canvas" crossorigin="anonymous"></canvas>
+            </div>
+            <div class="bss-image-editor-main"></div>
+            <div class="bss-image-editor-controls">
+                <ul class="bss-image-editor-menu">
+                    <li class="bss-image-editor-item">
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                    </li>
+                    <li class="bss-image-editor-item">
+                        <i class="fa fa-font" aria-hidden="true"></i>
+                    </li>
+                    <li class="bss-image-editor-item">
+                        <i class="fa fa-mouse-pointer" aria-hidden="true"></i>
+                    </li>
+                    <li class="bss-image-editor-item">
+                        <i class="fa fa-picture-o" aria-hidden="true"></i>
+                    </li>
+                </ul>
+            </div>
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- <div class="sidebar">
                 <button onclick="toggleMode(models.pan)">Toggle Pam</button>
                 <button onclick="toggleMode(models.drawing)">Toggle Draw</button>
                 <input id="colorPicker" value="#000" data-jscolor="" />
@@ -63,7 +118,7 @@
                 <button id="download">Save FIle</button>
             </div>
 
-            <canvas id="canvas" crossorigin="anonymous"></canvas>
+            <canvas id="canvas" crossorigin="anonymous"></canvas> -->
         </div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.js" integrity="sha512-UNbeFrHORGTzMn3HTt00fvdojBYHLPxJbLChmtoyDwB6P9hX5mah3kMKm0HHNx/EvSPJt14b+SlD8xhuZ4w9Lg==" crossorigin="anonymous"></script>
