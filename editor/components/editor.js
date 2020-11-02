@@ -54,6 +54,15 @@ export default function Editor() {
         backgroundColor: "transparent",
       });
     };
+    const initCustomCanvas = (id, width, height) => {
+        return new fabric.Canvas(id, {
+          width: width,
+          height: height,
+          selection: false,
+          backgroundColor: "transparent",
+        });
+      };
+      
     canvas = initCanvas("canvas");
     canvas.renderAll();
 
@@ -69,6 +78,9 @@ export default function Editor() {
 
     reader.addEventListener("load", () => {
         fabric.Image.fromURL(reader.result, (img) => {
+            // let height = img.height;
+            // let width = img.width;
+            // canvas = initCustomCanvas("canvas", width, height);
             img.scaleToWidth(200);
             img.scaleToHeight(200);
             canvas.add(img)
@@ -78,6 +90,13 @@ export default function Editor() {
 
   }, []);
 
+  const handleRemoveItem = useCallback(()=>{
+    if(canvas.getActiveObject()) {
+        let item = canvas.getActiveObject();
+        canvas.remove(item);
+        canvas.renderAll();
+    }
+  }, [])
 
   const handleFontFamilyChange = useCallback((value) => {
     setFontFamily(value);
@@ -169,6 +188,7 @@ const handleStrokeWidthChange = useCallback((value) => {
                     max={10}
                     output
                 />
+                <Button onClick={() => handleRemoveItem()} primary>remove item</Button>
 
                 <Button onClick={() => handleSaveFile()} primary>Save File</Button>
         </div>

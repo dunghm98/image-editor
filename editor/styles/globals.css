@@ -4,6 +4,7 @@
 
 .canvas-container {
     background: url('https://pixlr.com/img/misc/square-bg.png');
+    padding: 50px;
     margin: auto;
 }
 .sidebar {
@@ -24,9 +25,9 @@
     list-style: none;
 }
 
-.editor-wrapper {
+/* .editor-wrapper {
     width: 900px;
     height: 700px;
     background: #333;
     margin: auto;
-}
+} */
